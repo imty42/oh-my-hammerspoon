@@ -53,6 +53,14 @@ git clone git://github.com/hit1024/oh-my-hammerspoon.git ~/.hammerspoon
 - Caffeinate. 
     - dribleShift + `c`
 - Auto reload configs.
+- iTunes control
+    - previous: dribleShift + 7
+    - play/pause: dribleShift + 8
+    - next: dribleShift + 9
+- Volumn control
+    - mute: dribleShift + 0
+    - lower: dribleShift + -
+    - louder: dribleShift + +
 
 ## Regards
 

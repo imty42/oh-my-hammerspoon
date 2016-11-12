@@ -53,16 +53,16 @@ hs.hotkey.bind(drible, 'h', function()
 end)
 
 
--- iTunes controll
-hs.hotkey.bind(drible, '7', function() hs.itunes.previous() end)
-hs.hotkey.bind(drible, '8', function() hs.itunes.playpause() end)
-hs.hotkey.bind(drible, '9', function() hs.itunes.next() end)
+-- iTunes control
+hs.hotkey.bind(dribleShift, '7', function() hs.itunes.previous() end)
+hs.hotkey.bind(dribleShift, '8', function() hs.itunes.playpause() end)
+hs.hotkey.bind(dribleShift, '9', function() hs.itunes.next() end)
 
 
 -- Sound
 --- dod default_output_audio
 dod = hs.audiodevice.defaultOutputDevice()
-hs.hotkey.bind(drible, '0', function()
+hs.hotkey.bind(dribleShift, '0', function()
     is_muted = dod:muted()
     if is_muted then
         dod:setMuted(false)
@@ -72,14 +72,14 @@ hs.hotkey.bind(drible, '0', function()
         hs.alert('Audio is muted!')
     end
 end)
-hs.hotkey.bind(drible, '-', function()
+hs.hotkey.bind(dribleShift, '-', function()
     auv = dod:outputVolume() - 5
     dod:setVolume(auv)
     hs.alert('Volume down:' .. auv)
     print(dod:outputVolume())
 end)
 
-hs.hotkey.bind(drible, '=', function()
+hs.hotkey.bind(dribleShift, '=', function()
     auv = dod:outputVolume() + 5
     dod:setVolume(auv)
     hs.alert('Volume up:' .. auv)
