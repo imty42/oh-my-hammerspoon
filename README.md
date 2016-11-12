@@ -6,9 +6,10 @@
 
 ## Installation
 ```shell
-cp -r ~/.hammerspoon ~/hammerspoon_bac
+mv ~/.hammerspoon ~/hammerspoon_bac
 git clone git://github.com/hit1024/oh-my-hammerspoon.git ~/.hammerspoon
 ```
+Hammerspoon->Reload Config
 
 ## Hotkey Definition By Convention
 
