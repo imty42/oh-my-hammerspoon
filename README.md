@@ -22,7 +22,7 @@ git clone git://github.com/hit1024/oh-my-hammerspoon.git ~/.hammerspoon
 ## Features
 
 - Switch to certain app. 
-    - `drible`/`dribleShift` + somekey
+    - `prefix`/`prefixShift` + somekey
 - Quick resize current window.
     - leftTop: `hyper` + `u`
     - rightTop: `hyper` + `i`
