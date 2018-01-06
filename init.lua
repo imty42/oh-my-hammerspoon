@@ -375,7 +375,7 @@ end)
 
 function addMenuCaff()
     menuCaff = hs.menubar.new()
-    menuCaff:setIcon("/Users/2owe/.hammerspoon/caffeine-on.pdf") 
+    menuCaff:setIcon("~/.hammerspoon/caffeine-on.pdf") 
     menuCaff:setClickCallback(menuCaffRelease)
 end
 
