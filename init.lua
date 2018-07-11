@@ -60,9 +60,9 @@ hs.hotkey.bind(dribleShift, '9', function() hs.itunes.next() end)
 
 
 -- Sound
---- dod default_output_audio
-dod = hs.audiodevice.defaultOutputDevice()
 hs.hotkey.bind(dribleShift, '0', function()
+    --- dod default_output_audio
+    dod = hs.audiodevice.defaultOutputDevice()
     is_muted = dod:muted()
     if is_muted then
         dod:setMuted(false)
@@ -73,14 +73,18 @@ hs.hotkey.bind(dribleShift, '0', function()
     end
 end)
 hs.hotkey.bind(dribleShift, '-', function()
-    auv = dod:outputVolume() - 5
+    --- dod default_output_audio
+    dod = hs.audiodevice.defaultOutputDevice()
+    auv = math.floor(dod:outputVolume() - 5)
     dod:setVolume(auv)
     hs.alert('Volume down:' .. auv)
     print(dod:outputVolume())
 end)
 
 hs.hotkey.bind(dribleShift, '=', function()
-    auv = dod:outputVolume() + 5
+    --- dod default_output_audio
+    dod = hs.audiodevice.defaultOutputDevice()
+    auv = math.floor(dod:outputVolume() + 5)
     dod:setVolume(auv)
     hs.alert('Volume up:' .. auv)
     print(dod:outputVolume())
