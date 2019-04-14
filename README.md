@@ -6,8 +6,10 @@
 
 ## Installation
 ```shell
+# backup old config
 mv ~/.hammerspoon ~/hammerspoon_bac
-git clone git://github.com/hit1024/oh-my-hammerspoon.git ~/.hammerspoon
+
+git clone git://github.com/imty42/oh-my-hammerspoon.git ~/.hammerspoon
 ```
 Hammerspoon->Reload Config
 
@@ -55,7 +57,7 @@ Hammerspoon->Reload Config
 - Auto reload configs.
 - iTunes control.
     - previous: `dribleShift` + `7`
-    - play/pause: `dribleShift` + 8`
+    - play/pause: `dribleShift` + `8`
     - next: `dribleShift` + `9`
 - Volumn control.
     - mute: `dribleShift` + `0`
@@ -66,4 +68,4 @@ Hammerspoon->Reload Config
 
 @songchenwen https://github.com/songchenwen/dotfiles/tree/master/hammerspoon
 
-Mainly based on his work, i just add some specific resizing code.
+Mainly based on his work, i just added some specific resizing code.
